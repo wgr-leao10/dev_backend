@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Postagens</title>
+</head>
+<body>
+    <h1>Postagens</h1>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.titulo }} - {{ post.data_publicacao }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
